@@ -34,7 +34,7 @@ import SwiftUI
 
 struct ContentView: View {
   @State var textTop: AttributedString = AttributedString("")
-  @State var textBottom: AttributedString = AttributedString("")
+  @State var textToDisplay: AttributedString? = nil
   @FocusState private var topViewIsFocused: Bool
 
   var body: some View {
@@ -44,12 +44,22 @@ struct ContentView: View {
         .border(.orangeFF5A00)
         .focused($topViewIsFocused)
 
-      Text("Copy-paste genmoji here:")
-      TextEditor(text: $textBottom)
-        .border(.green)
+      if let textToDisplay {
+        Text(textToDisplay)
+      } else {
+        Text("No text to display")
+          .foregroundColor(.gray)
+      }
     }
     .onAppear {
       topViewIsFocused = true
+    }
+    .onChange(of: textTop) { oldText, newText in
+      let nsAttrString = NSAttributedString(newText)
+      if let rtfData = serializeText(nsAttrString),
+         let newNSAttrString = deserializeText(rtfData) {
+        textToDisplay = AttributedString(newNSAttrString)
+      }
     }
     .padding()
   }

@@ -63,33 +63,6 @@ struct CustomContentView: View {
   }
 }
 
-extension CustomContentView {
-  // 1. Serialize an NSAttributedString into RTFD data
-  func serializeText(_ text: NSAttributedString?) -> Data? {
-    guard let text = text else { return nil }
-    do {
-      let rtfData = try text.data(
-        from: NSRange(location: 0, length: text.length),
-        documentAttributes: [.documentType: NSAttributedString.DocumentType.rtfd])
-      return rtfData
-    } catch {
-      print("Error serializing text: \(error)")
-      return nil
-    }
-  }
-
-  // 2. Deserialize RTFD data into an NSAttributedString
-  func deserializeText(_ data: Data) -> NSAttributedString? {
-    do {
-      let attributedString = try NSAttributedString(data: data, documentAttributes: nil)
-      return attributedString
-    } catch {
-      print("Error deserializing text: \(error)")
-      return nil
-    }
-  }
-}
-
 #Preview {
   CustomContentView()
 }

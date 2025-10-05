@@ -44,8 +44,8 @@ struct CustomTextView: UIViewRepresentable {
     textView.isEditable = true
     textView.font = UIFont.preferredFont(forTextStyle: textStyle)
 
-    textView.supportsAdaptiveImageGlyph = true
-    textView.allowsEditingTextAttributes = true
+//    textView.supportsAdaptiveImageGlyph = true
+//    textView.allowsEditingTextAttributes = true
 
     return textView
   }

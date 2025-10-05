@@ -57,9 +57,9 @@ struct ContentView: View {
     .onChange(of: textTop) { oldText, newText in
       let nsAttrString = NSAttributedString(newText)
       textToDisplay = AttributedString(nsAttrString)
-      
+
 //      if let rtfData = serializeText(nsAttrString),
-//      let newNSAttrString = deserializeText(rtfData) {
+//         let newNSAttrString = deserializeText(rtfData) {
 //        textToDisplay = AttributedString(newNSAttrString)
 //      }
     }
