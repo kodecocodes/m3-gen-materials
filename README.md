@@ -2,11 +2,9 @@
 
 
 
-This repo contains all the downloadable materials and projects associated with the **Genmoji** module in:
+This repo contains all the downloadable materials and projects associated with the [Genmoji] module from [Kodeco](https://www.kodeco.com).
 
-### [Course](https://www.kodeco.com/library)
-
-- This course is part of [Program](https://www.kodeco.com), which you can take as either on-demand or live bootcamp from [Kodeco](https://www.kodeco.com).
+- This module is part of [Apple Intelligence Program](https://www.kodeco.com/ios/programs/apple-intelligence), which you can take as either on-demand or live bootcamp.
 
 --- 
 
@@ -16,4 +14,5 @@ Each edition has its own branch, named `versions/[VERSION]`. The default branch 
 
 | Branch                                                                                  | Version | Release Date |
 | --------------------------------------------------------------------------------------- |:-------:|:------------:|
-| [versions/1.0](https://github.com/kodecocodes/m3-gen-materials/tree/versions/1.0) | 1.0     | YYYY-MM-DD   |
+| **version 1.0 didn't have materials** | 1.0     | 2024-09-19   |
+| [versions/2.0](https://github.com/kodecocodes/m3-gen-materials/tree/versions/2.0) | 2.0     | 2025-10-10   |
