@@ -14,5 +14,5 @@ Each edition has its own branch, named `versions/[VERSION]`. The default branch 
 
 | Branch                                                                                  | Version | Release Date |
 | --------------------------------------------------------------------------------------- |:-------:|:------------:|
-| **version 1.0 didn't have materials** | 1.0     | 2024-09-19   |
+| version 1.0 didn't have materials | 1.0     | 2024-09-19   |
 | [versions/2.0](https://github.com/kodecocodes/m3-gen-materials/tree/versions/2.0) | 2.0     | 2025-10-10   |
