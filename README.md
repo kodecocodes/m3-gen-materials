@@ -2,7 +2,7 @@
 
 
 
-This repo contains all the downloadable materials and projects associated with the [Genmoji] module from [Kodeco](https://www.kodeco.com).
+This repo contains all the downloadable materials and projects associated with the [Genmoji](https://www.kodeco.com/ios/paths/ux-apple-intelligence/49710741-genmoji) module from [Kodeco](https://www.kodeco.com).
 
 - This module is part of [Apple Intelligence Program](https://www.kodeco.com/ios/programs/apple-intelligence), which you can take as either on-demand or live bootcamp.
 
